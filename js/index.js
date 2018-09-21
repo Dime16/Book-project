@@ -72,3 +72,22 @@ $(".book__b").click(function () {
     list.appendChild(item);
     $("#dime").append(list);
 });
+//               -- FOOTER ALLWAYS ON BOTTOM FUNCTION --
+
+function autoHeight() {
+    var bodyHeight = $("body").height();
+    var vwptHeight = $(window).height();
+    var footer = $("#footer").height()
+    var gap = vwptHeight - bodyHeight;
+    if (vwptHeight > bodyHeight) {
+        $("#dime").css( "padding-bottom" , gap );
+    } else {
+        $("#dime").css( "padding-bottom" , "0" );
+    }
+}
+$(document).ready(function() {
+    autoHeight();
+});
+$(window).resize(function() {
+    autoHeight();   
+});
