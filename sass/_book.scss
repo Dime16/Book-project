@@ -1,0 +1,48 @@
+.book {
+
+    &__info {
+        padding-top: 5rem;
+        padding-left: 2rem;
+
+        &__item {
+            padding: .25rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__b {
+        border: none;
+        background-color: saddlebrown;
+        color: beige;
+        padding: 2rem;
+        margin: 2rem 0;
+        border-radius: 3px;
+        transition: all .3s;
+        box-shadow: 8px 8px 5px rgba(black, .2);
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        &__item {
+            border: 1px solid black;
+            font-size: 1.6rem;
+            padding: 1rem;
+            width: 10rem;
+        }
+
+        &__bar {
+            font-size: 1.6rem;
+            padding: 1rem;
+            border: 1px solid black;
+            width: 19rem;
+        }
+    }
+
+}
